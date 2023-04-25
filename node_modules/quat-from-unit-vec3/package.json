@@ -1,0 +1,45 @@
+{
+  "name": "quat-from-unit-vec3",
+  "version": "1.0.0",
+  "description": "creates a quaternion from two unit vectors",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "gl-quat": "^1.0.0",
+    "gl-vec3": "^1.0.3"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test": "node test.js | faucet"
+  },
+  "keywords": [
+    "unit",
+    "vec",
+    "vec3",
+    "gl-vec3",
+    "gl-quat",
+    "quat",
+    "quaternion",
+    "quaternions",
+    "normalize",
+    "normalized",
+    "vectors",
+    "vector"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/quat-from-unit-vec3.git"
+  },
+  "homepage": "https://github.com/Jam3/quat-from-unit-vec3",
+  "bugs": {
+    "url": "https://github.com/Jam3/quat-from-unit-vec3/issues"
+  }
+}

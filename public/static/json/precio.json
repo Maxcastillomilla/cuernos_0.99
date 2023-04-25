@@ -1,0 +1,16 @@
+{
+    "madera":[
+        {
+            "name": "pino",
+            "precio": 600000
+        },
+        {
+            "name": "lenga",
+            "precio": 650000
+        },
+        {
+            "name": "haya",
+            "precio": 700000
+        }
+    ]
+}

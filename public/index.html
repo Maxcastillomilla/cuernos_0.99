@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cuernos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script
+            async
+            src="https://unpkg.com/es-module-shims@1.6.2/dist/es-module-shims.js"
+        ></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./build/three.module.js"
+                }
+            }
+        </script>
+
+    </style>
+  </head>
+  <body>
+    <h1 id="logo">CUERNOS</h1>
+    
+    <div id="main">
+        <div id="conter">
+            <canvas id="webgl" class="webgl"></canvas>
+        </div>
+        
+
+        <div  class="slidecontainer">
+
+            <div id="recuadro">
+            <p style="padding-bottom: 3 0px;">CUERNOS</p> 
+            <p class="titulo">MODULOS VERTICALES</p>    
+            <input type="range" min="1" max="6" value="1" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+            <output style="padding-left: 10%;">1</output>
+            <br>
+            <p class="titulo">MODULOS HORIZONTALES
+            </p>  
+            <input type="range" min="1" max="6" value="1" class="slider" id="myRange2" oninput="this.nextElementSibling.value = this.value">
+            <output style="padding-left: 10%;">1</output>
+            <br>
+            <p class="titulo">SALIENTES HORIZONTALES</p>  
+            <input type="range" min="0" max="10" value="0" class="slider" id="myRange3" oninput="this.nextElementSibling.value = this.value">
+            <output style="padding-left: 10%;">0</output>
+            <br>
+            <p class="titulo">SALIENTES VERTICALES</p>  
+            <input type="range" min="0" max="4" value="0" class="slider" id="myRange4" oninput="this.nextElementSibling.value = this.value">
+            <output style="padding-left: 10%;">0</output>
+            <br>
+            <p class="titulo">Material</p>   
+            <select name="quality" id="qualitymaterial" required="" class="form__service">
+                <!-- <option value="" selected="" disabled="">Selecionar Tipo</option> -->
+                <option value="0">pino</option> 
+                <option value="1">lenga</option>
+                <option value="2">haya</option>
+              </select>
+            <br>
+            <p class="titulo">Color de fondo</p> 
+            <input id="color" class="color" type="color" value="#21232a">
+
+
+            <p class="titulo">Medidas</p>  
+            <label class="switch">
+                <input type="checkbox" id="size" checked>
+                <span class="sliderb round"></span>
+              </label>
+
+
+
+
+            <p class="titulo">Objetos</p>  
+            <label class="switch">
+                <input type="checkbox" id="objetos" checked>
+                <span class="sliderb round"></span>
+              </label>
+
+
+
+                
+            </div>
+
+            <div id="compra">
+              <p  style="padding-left: 10%;" class="titulo">Compra</p>  
+              <div id="derecha">
+                  <img src="https://raw.githubusercontent.com/Maxcastillomilla/Mueblesasset/main/mueble01/imagenes/carro.svg" style="padding-left: 10%;" id="carrocompra">
+                  <p id="precio" >xxxx</p>
+              
+              </div>
+              
+              
+  
+          </div>
+      </div>
+
+     
+
+  </div>
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </div>
+
+
+ 
+
+
+  
+
+  <div>
+    <img href="#"  id="back" src="https://raw.githubusercontent.com/Maxcastillomilla/Mueblesasset/main/mueble01/imagenes/editor%20.svg" alt="">
+  </div>
+      
+
+
+
+
+
+
+  <form id="formpago" action="/pagar" method="get">
+    <input type="hidden" id="preciomercado" name="precio" value="4000">
+    <input type="hidden" id="materialmercado" name="materialmercado" value="0">
+  </form>
+    
+    <script type="module" src="app.js"></script>
+
+
+    
+  </body>
+</html>

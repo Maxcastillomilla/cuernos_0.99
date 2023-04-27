@@ -1,16 +1,14 @@
 import * as THREE from 'three'
 import { OrbitControls } from './jsm/controls/OrbitControls.js'
-import Stats from './jsm/libs/stats.module.js'
-import { GUI } from './jsm/libs/lil-gui.module.min.js'
 import { GLTFLoader } from './jsm/loaders/GLTFLoader.js'
 
 
 let entero = 'valor'
 
 
-export const myModule = {
+/* export const myModule = {
     foo: entero
-};
+}; */
 let jsonMadera 
 let typematerial = document.getElementById('qualitymaterial')
 

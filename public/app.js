@@ -720,8 +720,8 @@ let spritey = makeTextSprite( altomm + " mm ",
     console.log('jsonmadera = ' + jsonMadera)
     let materialmadera
     /* obtenerDatos(); */
-    let preciomaderas = jsonMadera[typematerial.value].precio || 3000;
-
+    let preciomaderas = jsonMadera[typematerial.value].precio || 'ERROR';
+    console.log('precio maderas= '+ preciomaderas )
     
     entero = Math.trunc(metroscuadrados *  preciomaderas) // [typematerial.value] 
     

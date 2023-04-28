@@ -89,11 +89,13 @@ app.post("/enviar", function (req, res) {
 // Ruta de pago
 app.get('/pagar', (req, res) => {
   // Crea un objeto de preferencia
+  console.log( 'el numero es =' + Math.round(parseFloat(req.query.precio)*preciosArray[req.query.materialmercado]))
+  let numermagic = Math.round(parseFloat(req.query.precio)*preciosArray[req.query.materialmercado])
   let preference = {
     items: [
       {
         title: 'Producto de ejemplo',
-        unit_price: parseFloat(req.query.precio)*preciosArray[req.query.materialmercado],
+        unit_price: +numermagic,
         quantity: 1,
       },
     ],

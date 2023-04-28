@@ -22,8 +22,10 @@ async function obtenerDatos() {
     console.log('lista de precios');
     jsonMadera = data;
     console.log(jsonMadera);
+    loadcuernos()   
   } catch (error) {
     console.error(error);
+    alert('No pudimos cargar la Lista de precios, intenta mas tarde')
   }
 }
 
@@ -717,8 +719,8 @@ let spritey = makeTextSprite( altomm + " mm ",
       
     console.log('jsonmadera = ' + jsonMadera)
     let materialmadera
-
-    let preciomaderas = (jsonMadera == undefined) ? 600000 : jsonMadera[typematerial.value].precio; // Usamos el operador ternario para asignar un nuevo valor si material es undefined
+    /* obtenerDatos(); */
+    let preciomaderas = jsonMadera[typematerial.value].precio || 3000;
 
     
     entero = Math.trunc(metroscuadrados *  preciomaderas) // [typematerial.value] 
@@ -742,9 +744,11 @@ let spritey = makeTextSprite( altomm + " mm ",
 
 
 
-loadcuernos()
+/* loadcuernos() */
 
-
+/* document.addEventListener('DOMContentLoaded', function() {
+    loadcuernos()
+}, false); */
 
 
 

@@ -67,6 +67,7 @@ app.get("/", function (req, res) {
 app.get("/obtener", function (req, res) {
   console.log("se ha pulsado el botón obtener");
   res.send(maderasjson);
+  
 });
 
 app.post("/enviar", function (req, res) {
